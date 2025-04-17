@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Générateur de Facture</title>
+</head>
+<body>
+  <h1>Générateur de Facture (factice)</h1>
+  <form id="form-facture">
+    <label>Nom de l’entreprise : <input type="text" id="entreprise" required></label><br>
+    <label>Client : <input type="text" id="client" required></label><br>
+    <label>Description : <input type="text" id="description" required></label><br>
+    <label>Montant (€) : <input type="number" id="montant" required></label><br>
+    <label>Date : <input type="date" id="date" required></label><br>
+    <button type="submit">Générer la facture PDF</button>
+  </form>
+
+  <script>
+    document.getElementById("form-facture").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const entreprise = document.getElementById("entreprise").value;
+      const client = document.getElementById("client").value;
+      const description = document.getElementById("description").value;
+      const montant = document.getElementById("montant").value;
+      const date = document.getElementById("date").
