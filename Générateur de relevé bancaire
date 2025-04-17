@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur de Relevé Bancaire</title>
+</head>
+<body>
+  <h1>Générateur de Relevé Bancaire (factice)</h1>
+  <form id="form-releve">
+    <label>Nom : <input type="text" id="nom" required></label><br>
+    <label>Banque : <input type="text" id="banque" required></label><br>
+    <label>Solde actuel (€) : <input type="number" id="solde" required></label><br>
+    <label>Date : <input type="date" id="date" required></label><br>
+    <button type="submit">Générer le relevé PDF</button>
+  </form>
+
+  <script>
+    document.getElementById("form-releve").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nom = document.getElementById("nom").value;
+      const banque = document.getElementById("banque").value;
+      const solde = document.getElementById("solde").value;
+      const date = document.getElementById("date").value;
+
+      const win = window.open('', '', 'width=800,height=600');
+      win.document.write(`<h1>Relevé Bancaire (Test)</h1>`);
+      win.document.write(`<p><strong>Nom :</strong> ${nom}</p>`);
+      win.document.write(`<p><strong>Banque :</strong> ${banque}</p>`);
+      win.document.write(`<p><strong>Solde :</strong> ${solde} €</p>`);
+      win.document.write(`<p><strong>Date :</strong> ${date}</p>`);
+      win.document.write(`<h3>Historique des opérations</h3>`);
+      win.document.write(`<ul>
+        <li>+500 € - Virement reçu</li>
+        <li>-120 € - Retrait distributeur</li>
+        <li>-45 € - Paiement en ligne</li>
+        <li>+1000 € - Salaire</li>
+      </ul>`);
+      win.document.write(`<p style="color:red;">Ce
