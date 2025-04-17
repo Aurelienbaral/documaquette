@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocuMaquette - Accueil</title>
+</head>
+<body>
+  <h1>Bienvenue sur DocuMaquette</h1>
+  <p>Créez des documents de test en quelques clics : fiches de paie, factures, relevés bancaires.</p>
+  <ul>
+    <li><a href="fiche-de-paie.html">Générateur de fiche de paie</a></li>
+    <li><a href="facture.html">Générateur de facture</a></li>
+    <li><a href="releve-bancaire.html">Générateur de relevé bancaire</a></li>
+    <li><a href="dons-crypto.html">Faire un don (PayPal / Crypto)</a></li>
+  </ul>
+
+  <!-- Publicité Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5046146012001631"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
