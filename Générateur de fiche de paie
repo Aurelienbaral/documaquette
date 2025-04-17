@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Générateur de Fiche de Paie</title>
+</head>
+<body>
+  <h1>Générateur de Fiche de Paie (factice)</h1>
+  <form id="form-paie">
+    <label>Nom complet : <input type="text" id="nom" required></label><br>
+    <label>Poste : <input type="text" id="poste" required></label><br>
+    <label>Entreprise : <input type="text" id="entreprise" required></label><br>
+    <label>Salaire net (€) : <input type="number" id="salaire" required></label><br>
+    <label>Date : <input type="date" id="date" required></label><br>
+    <button type="submit">Générer le PDF</button>
+  </form>
+
+  <script>
+    document.getElementById("form-paie").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nom = document.getElementById("nom").value;
+      const poste = document.getElementById("poste").value;
+      const entreprise = document.getElementById("entreprise").value;
+      const salaire = document.getElementById("salaire").value;
+      const date = document.getElementById("date").value;
+
+      const win = window.open('', '', 'width=800,height=600');
+      win.document.write(`<h1>Fiche de Paie (Test)</h1>`);
+      win.document.write(`<p><strong>Nom :</strong> ${nom}</p>`);
+      win.document.write(`<p><strong>Poste :</strong> ${poste}</p>`);
+      win.document.write(`<p><strong>Entreprise :</strong> ${entreprise}</p>`);
+      win.document.write(`<p><strong>Salaire net :</strong> ${salaire} €</p>`);
+      win.document.write(`<p><strong>Date :</strong> ${date}</p>`);
+      win.document.write(`<p style="color:red;">Ce document est une simulation à des fins de test uniquement.</p>`);
+      win.document.close();
+      win.print();
+    });
+  </script>
+</body>
+</html>
