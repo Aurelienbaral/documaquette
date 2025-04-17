@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faire un don</title>
+</head>
+<body>
+  <h1>Soutenez le projet DocuMaquette</h1>
+  <p>Si vous trouvez ces outils utiles, vous pouvez faire un don pour soutenir leur développement. Merci 🙏</p>
+
+  <h2>💸 Faire un don via PayPal</h2>
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="business" value="aurelien.baral@gmail.com">
+    <input type="hidden" name="currency_code" value="EUR">
+    <input type="submit" value="Faire un don PayPal">
+  </form>
+
+  <h2>💰 Faire un don en crypto</h2>
+  <p><strong>Bitcoin (BTC):</strong> <code>bc1qexemplebtc123456789</code></p>
+  <p><strong>Ethereum (ETH):</strong> <code>0xExempleETHabcdef123456</code></p>
+  <p><strong>Monero (XMR):</strong> <code>48ExempleMoneroXxXxXx</code></p>
+
+  <p>Merci pour votre soutien 🙌</p>
+</body>
+</html>
