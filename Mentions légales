@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentions légales</title>
+</head>
+<body>
+  <h1>Mentions Légales</h1>
+  <p>
+    Ce site, <strong>DocuMaquette</strong>, propose des générateurs de documents fictifs destinés à un usage strictement personnel, éducatif ou de test (maquettes, démonstrations, etc.).
+  </p>
+
+  <h2>Utilisation des documents</h2>
+  <p>
+    Les documents générés via ce site sont simulés. Ils n’ont aucune valeur légale ou administrative.
+    Toute utilisation frauduleuse ou falsification de documents générés via ce site engage uniquement la responsabilité de l’utilisateur.
+  </p>
+
+  <h2>Responsabilité</h2>
+  <p>
+    Le propriétaire de ce site ne collecte, ne stocke et ne partage aucune donnée personnelle. 
+    Le site fonctionne en local dans votre navigateur sans transmission de données.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Pour toute demande, contactez-nous uniquement via l’onglet “Faire un don” (aucune réponse n’est garantie).
+  </p>
+
+  <p style="color:gray; font-size: 12px;">
+    Dernière mise à jour : 2025
+  </p>
+</body>
+</html>
